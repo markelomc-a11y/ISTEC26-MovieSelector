@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Cinema Gótico - Acervo Sombrio</title>
+  <title>Cinema Gótico - Acervo Sombrio + Edição Maligna</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Fonte gótica opcional -->
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
 </head>
 <body>
+  <!-- Painel de controle original dos filmes -->
   <div id="controls">
     <label for="yearSelect">⚡ ANO MALDITO ⚡</label>
     <select id="yearSelect">
       <option value="all">Todos os anos</option>
     </select>
   </div>
+
+  <!-- DASHBOARD DE EDIÇÃO (agora com posters dos filmes) -->
+  <div id="edition-dashboard">
+    <h2>⚡ TORMENTO VISUAL ⚡</h2>
+    <p class="info">🔮 Clique em <strong>EDITAR POSTER</strong> em qualquer filme para carregar a imagem</p>
+    <div id="canvas-container"></div>
+    <div id="filter-panel"></div>
+    <div id="save-panel">
+      <button id="saveImageBtn">💾 SALVAR IMAGEM MALDITA 💾</button>
+    </div>
+    <p class="info">🖱️ Arraste o rato sobre a imagem para distorcer | Sliders para tormento visual</p>
+  </div>
+
+  <!-- Grid original dos filmes -->
   <div id="film-grid"></div>
 
   <script src="sketch.js"></script>
